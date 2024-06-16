@@ -1,0 +1,17 @@
+/* header.component.css */
+.header {
+    display: grid;
+    background-color: #FF0080;
+    padding: 0.4rem;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    font-family: 'Alatsi';
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
