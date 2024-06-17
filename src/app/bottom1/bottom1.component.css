@@ -4,58 +4,75 @@
     padding: 0.4rem;
     border-bottom-right-radius: 24px;
     border-bottom-left-radius: 24px;
-    font-family: 'Alatsi';
+    font-family: 'Outfit';
     font-size: 36px;
     color: white;
     text-align: center;
 }
 
-.main-container-1{
+.main-container-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1rem
 }
 
-.text{
-    font-weight: bold; font-size: 50px; font-family: sans-serif; margin-left: 80px; width: 600px; text-align: start;margin-top: 200px;
+.text {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Outfit;
+    text-align: start;
+    margin-top: 200px;
 }
 
-.text-1{
-    font-family: sans-serif; margin-left: 90px; width: 570px; text-align: start; color: rgb(86, 88, 94);;
+.text-1 {
+    font-family: Outfit;
+    text-align: start;
+    color: rgb(86, 88, 94);
 }
 
-.sub-container-1-1{
-    height: 510px;
-    width: 600px;
- 
-  border-radius:  30px;
-  
+.sub-container-1-1 {
+    width: 100%;
+    border-radius: 30px;
+
 }
 
-.sub-container-1-1::after{
+.sub-container-1-1::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.sub-container-1{
-   
-    margin-top: 100px;   
+.sub-container-1 {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    margin-top: 1.4rem;
 }
 
-.button{
-     font-size: 18px; font-family: sans-serif; height: 50px; width: 200px;text-align: center;display: grid;
-    justify-content: center; align-content: center;margin-left: 200px; margin-top: 50px;--font-weight: 500;
+.button {
+    font-size: 18px;
+    font-family: Outfit;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 50px;
+    --font-weight: 500;
     border-radius: 28px;
     border-width: 0px;
     background-color: rgb(255, 0, 128);
     color: rgb(255, 255, 255);
     border-color: #0D131A;
 
- }
+}
 
- .button:hover{
-    background-color: rgba(255, 255, 255, 0);
-    color: #0D131A;
-    border-color: #0D131A;
 
- }
+@media screen and (max-width: 916px) {
+    .main-container-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

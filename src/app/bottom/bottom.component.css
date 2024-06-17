@@ -4,61 +4,75 @@
     padding: 0.4rem;
     border-bottom-right-radius: 24px;
     border-bottom-left-radius: 24px;
-    font-family: 'Alatsi';
+    font-family: 'Outfit';
     font-size: 36px;
     color: white;
     text-align: center;
 }
-.text-1{
+
+.text-1 {
     text-align: center;
-   color: rgb(86, 88, 94);
-   font-family: sans-serif;
-   margin-top: 80px;
+    color: rgb(86, 88, 94);
+    font-family: Outfit;
+    margin-top: 80px;
 }
 
-.head-text{
+.head-text {
     text-align: center;
-    font-family: sans-serif;
+    font-family: Outfit;
     font-weight: bold;
     font-size: 45px;
+    margin: 0px;
+    margin-top: 0.1rem;
+    margin-bottom: 1.4rem;
 }
 
-.main-container{
+.main-container {
     display: grid;
-    grid-template-columns: 1.5fr 1.2fr;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-gap: 1rem;
 }
 
-.sub-container-1{
-    height: 760px;
-    width: 710px;
-    
+.sub-container-1 {
+    height: 785px;
+    width: 90%;
+
     display: block;
     margin: 0 auto;
     background-color: rgb(238, 236, 236);
-    border-radius:  30px 30px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
 }
 
-.sub-container-1-1{
+.sub-container-1-1 {
     height: 660px;
-    width: 710px;
-  display: block;
-  margin: 0 auto;
-  border-radius:  30px 30px 0px 0px;
-  
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+
 }
 
-.sub-container-2{
+.sub-container-2 {
     height: 370px;
-    width: 600px;
     background-color: rgb(238, 236, 236);
-    border-radius:  30px 30px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     margin-bottom: 20px;
-   
+    width: 92%;
+
 }
 
-.sub-container-2-2{ 
+.sub-container-2-2 {
     height: 300px;
-    width: 600px;
-    border-radius:  30px 30px 0px 0px;
+    width: 100%;
+
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
 }
 
+@media screen and (max-width: 916px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

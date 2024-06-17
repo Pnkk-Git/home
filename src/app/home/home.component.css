@@ -1,8 +1,15 @@
 .outer-wrapper {
     display: grid;
-    height: 86.5vh;
+    height: 100vh;
     background-color: white;
-    grid-template-columns: 60vw 40vw;
+    grid-template-columns: 57vw 43vw;
+}
+
+.left-wrapper {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 .inner-wrapper {
@@ -19,7 +26,23 @@
     grid-auto-flow: row;
 }
 
+.img {
+    width: 75%;
+    border-radius: 24px 0px 24px 24px;
+    border-radius: 24px 0px 24px 24px;
+    border: 3px solid #FF0080
+}
+
 @media screen and (max-width: 916px) {
+
+    .left-wrapper {
+        position: relative;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin-top: 8rem;
+    }
+
     .outer-wrapper {
         display: grid;
         height: 96.5vh;
@@ -31,9 +54,17 @@
         background-color: white;
         justify-content: center;
         display: grid;
-        align-content: center;
+        align-content: flex-start;
         grid-auto-flow: column;
         padding: 3rem;
+
+    }
+
+    .img {
+        width: 85%;
+        border-radius: 24px 0px 24px 24px;
+        border-radius: 24px 0px 24px 24px;
+        border: 3px solid #FF0080
     }
 }
 
@@ -42,14 +73,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Ensure the image does not overflow */
+    overflow: hidden;
+    /* Ensure the image does not overflow */
 }
 
 .box img {
     height: 100%;
     width: 100%;
-    object-fit: cover; /* Change to 'contain' if you want the entire image to fit inside the box */
-    border-radius: inherit; /* To inherit the border radius from parent */
+    object-fit: cover;
+    /* Change to 'contain' if you want the entire image to fit inside the box */
+    border-radius: inherit;
+    /* To inherit the border radius from parent */
 }
 
 p {
@@ -69,11 +103,19 @@ p {
     text-align: center;
 }
 
-.button{
-    margin-top:8px; text-align: center; font-size:26px; background-color:#FF0080;border-radius: 24px 24px 0px 24px; padding: 12px; width: 10rem; color: white; border: none;
+.button {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 26px;
+    background-color: #FF0080;
+    border-radius: 24px 24px 0px 24px;
+    padding: 12px;
+    width: 10rem;
+    color: white;
+    border: none;
 }
 
-.button:hover{
+.button:hover {
     color: #FF0080;
     background-color: black;
 }
