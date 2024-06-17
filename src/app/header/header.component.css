@@ -1,17 +1,45 @@
-/* header.component.css */
 .header {
-    display: grid;
-    background-color: #FF0080;
-    padding: 0.4rem;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    font-family: 'Alatsi';
-    font-size: 36px;
-    color: white;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  background-color: #FF0080;
+  padding: 0.4rem 1rem; /* Padding on top/bottom and sides */
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  font-family: 'Alatsi';
+  font-size: 36px;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-left: 100px; /* Specific left padding */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.header .title {
+  margin: 0; /* Remove default margin */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
   
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}

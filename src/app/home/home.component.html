@@ -1,30 +1,31 @@
-
-
 <div class="outer-wrapper">
     <div style="position: relative;     display: grid;
     align-items: center; justify-items: center; top:40px">
         <div style="position: absolute; display: grid; grid-auto-flow: column;">
 
             <div>
-                <div style="border: 2px solid #FF0080;  padding: 4rem; width: 4rem; border-radius: 24px 24px 0px 24px;">
-                    <img style="height: 100%; width: 100%; object-fit: contain;"
+                <div
+                    style="border: 2px solid #FF0080;  height: 120px; width: 200px;  border-radius: 24px 24px 0px 24px;">
+                    <img style="height: 100%; width: 100%; border-radius: 24px 24px 0px 24px; "
                         src="../../assets/section-1/birthjday1.png">
                 </div>
 
                 <div
-                    style="border: 2px solid #FF0080; padding: 4rem; margin-top: 0.8rem; width: 10rem; border-radius: 24px 0px 24px 24px;">
-                    b
+                    style="border: 2px solid #FF0080; height: 170px; width: 250px; margin-top: 0.8rem;  border-radius: 24px 0px 24px 24px;">
+                    <img src="../../assets/section-1/wedding.png"
+                        style="height: 100%; width: 100%; border-radius: 24px 0px 24px 24px;">
                 </div>
             </div>
             <div>
                 <div style="    border: 2px solid #FF0080;
-                padding: 4rem;
-                width: 4rem;
+               height: 120px;
+                width: 200px;
                 border-radius: 24px 24px 24px 0px;
                 top: -15%;
                 position: relative;
-                right: 40%;">
-                    c
+                right: 30%; margin-left: 60px;">
+                    <img style="height: 100%; width: 100%; border-radius: 24px 24px 24px 0px;"
+                        src="../../assets/section-1/dj.png">
                 </div>
                 <div style="    border: 2px solid #FF0080;
                     width: 1rem;
@@ -32,66 +33,65 @@
                     position: relative;
                     top: -15%;
                     right: -10%;
-                    padding: 5rem 2rem 8rem 1rem;
+                    height: 260px;
+                    width: 100px;
     margin-top: 0.8rem;">
-                    d
+                    <img style="height: 100%; width: 100%; border-radius: 24px 24px 24px 0px;"
+                        src="../../assets/section-1/bump1.png">
                 </div>
                 <div style="    border: 2px solid #FF0080;
-                padding: 4rem;
-                width: 4rem;
+                height: 180px;
+                width: 220px;
                 border-radius: 24px 24px 0px 24px;
                 top: -12%;
                 position: relative;
-                right: 40%;">
-                    e
+                right: 20%; ">
+                    <img src="../../assets/section-1/corporate-events.png"
+                        style="height: 100%; width: 100%; border-radius: 24px 24px 0px 24px;">
                 </div>
             </div>
 
             <div>
 
                 <div style="    border: 2px solid #FF0080;
-                width: 1rem;
+                width: 100px;
                 border-radius: 24px 24px 0px 24px;
                 position: relative;
                 top: 0%;
                 right: 36%;
-                padding: 0rem 2rem 8rem 1rem;
+                height: 200px;
                 margin-top: 0.8rem;">
-                    f
+                    <img src="../../assets/section-1/lunch.png"
+                        style="height: 100%; width: 100%; border-radius: 24px 24px 0px 24px;">
                 </div>
                 <div style="border: 2px solid #FF0080;
-                padding: 6rem 7rem 1rem 3rem;
-                height: 12rem;
-                /* width: 11rem; */
+                
+                height: 300px;
+                width: 200px; 
                 border-radius: 0px 24px 24px 24px;
-                top: 8%;
+                top: 3%;
                 position: relative;
                 right: 36%;">
-                    g
+                    <img src="../../assets/section-1/baby.png"
+                        style="height: 100%; width: 100%; border-radius: 0px 24px 24px 24px;">
                 </div>
             </div>
-            <!-- <div style="border: 2px solid #FF0080; padding: 4rem; width: 6rem; border-radius: 24px 0px 24px 24px;">
-                .
-            </div>
-            <div style="border: 2px solid #FF0080; padding: 4rem; width: 6rem; border-radius: 24px 0px 24px 24px;">
-                .
-            </div>
-            <div style="border: 2px solid #FF0080; padding: 4rem; width: 6rem; border-radius: 24px 0px 24px 24px;">
-                .
-            </div> -->
+
 
         </div>
     </div>
 
     <div class="wrapper-right">
-        <p style="font-size: 36px; line-height: 47px;">Your
-            <span style="font-size: 46px; color:#FF0080;font-weight: bold !important"> one-stop </span>
-            <span style="font-weight: lighter !important">event marketplace for all</span>
-            <span style="font-size: 46px; color:#FF0080;font-weight: bold !important"> occasions.</span>
+        <p style="font-size: 36px;  line-height: 47px; font-family: sans-serif;"><span
+                style="font-family: sans-serif; font-size: 36px;">Your</span>
+            <span style="font-size: 40px; font-family: sans-serif; color:#FF0080;font-weight: bold !important ">
+                one-stop </span>
+            <span style=" font-family: sans-serif; font-weight: lighter !important">event marketplace for all</span>
+            <span style=" font-family: sans-serif; font-size: 40px; color:#FF0080;font-weight: bold !important">
+                occasions.</span>
         </p>
-        <div
-            style="margin-top:8px; text-align: center; font-size:26px; background-color:#FF0080;border-radius: 24px 24px 0px 24px; padding: 1rem; width: 10rem; color: white;">
-            Get Started
+        <div>
+            <button (click)="submit()" class="button">Get Started</button>
         </div>
     </div>
 </div>

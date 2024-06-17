@@ -1,0 +1,35 @@
+.input-1{
+    width: 100%;
+    height: var(--input-height);
+    padding: 16px;
+    font-family: sans-serif;
+    font-size: var(--input-text-size, var(--body-font-size));
+    font-weight: var(--form-font-weight, var(--body-font-weight));
+    color: var(--input-text-color, var(--body-color));
+    background-color: var(--input-fill-color, #dadce0);
+    border-color: var(--input-border-color, #1d1e20);
+    border-style: solid;
+    border-width: var(--input-border-width, 0);
+    border-radius: var(--input-border-radius, 0);
+    outline: none;
+    transition: color ease .2s, border-color ease .2s, background-color ease .2s;
+    margin-bottom: 30px;
+}
+
+.button{
+    width: 150px; display: block; place-self: center; font-family: sans-serif;
+    border-width: 0px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: rgb(50, 50, 50);
+    border-radius: 30px;
+    height: 50px;
+   
+}
+
+.button:hover{
+    background-color: #FF0080;
+    color: rgb(255, 255, 255);
+    
+  
+}
