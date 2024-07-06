@@ -1,0 +1,11 @@
+<div #container id="container">
+    <div *ngFor="let letter of alphabet; let i = index" [id]="'card-' + letter" class="card"
+        [ngClass]="{'staggered-top': i % 2 === 0, 'staggered-bottom': i % 2 !== 0}">
+        {{ letter }}
+    </div>
+</div>
+<div id="scale">
+    <span *ngFor="let letter of alphabet" (click)="scrollToLetter(letter)">
+        {{ letter }}
+    </span>
+</div>

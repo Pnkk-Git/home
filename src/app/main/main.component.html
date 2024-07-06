@@ -1,0 +1,61 @@
+<div class="header">
+    <div>
+        <p class="logo">PNKK</p>
+    </div>
+    <div class="menu-wrapper">
+        <div class="hamburger-menu" [class.active]="isMenuActive" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu-items-container" [class.active]="isMenuActive">
+            <p class="menu-items">Home</p>
+            <p class="menu-items">About</p>
+            <p class="menu-items">Services</p>
+            <p class="menu-items">Contact Us</p>
+            <p class="book-now-button">Book Now</p>
+        </nav>
+    </div>
+</div>
+
+<div>
+    <img class="easeload" onload="this.style.opacity=1" style="    display: grid;
+    width: 100vw;
+    opacity: 1;
+    height: 40vh;
+    object-fit: cover;" src="../../assets/Mask group.png" />
+</div>
+
+<div class="hero-wrapper">
+    <div class="occasions-wrapper">
+
+        <p style="font-size: 36px;  line-height: 47px; font-family: Unbounded;"><span
+                style="font-family: Unbounded; font-size: 36px; font-weight: 200;">Your</span>
+            <span style="font-size: 44px; font-family: Unbounded; color:#FF0080;font-weight: 400 !important ">
+                one-stop </span>
+            <span style=" font-family: Unbounded; font-weight: lighter !important; font-weight: 400">event marketplace
+                for
+                all</span>
+            <span style=" font-family: Unbounded; font-size: 44px; color:#FF0080;font-weight: 400;">
+                occasions.</span>
+        </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 0.8fr; justify-content: center;">
+        <div class="search-wrapper">
+            <div>
+                <p>Location</p>
+            </div>
+            <hr class="solid">
+            <div>
+                <p>Event type</p>
+            </div>
+            <hr class="solid">
+            <div style="display: grid; width: 100%;">
+                <p class="search-button">
+                    Search
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

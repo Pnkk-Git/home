@@ -1,0 +1,197 @@
+:host {
+    display: grid;
+    font-family: Unbounded;
+}
+
+.menu-items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr max-content 1fr;
+    grid-column-gap: 4rem;
+    align-items: center;
+
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo {
+    font-size: 48px;
+    color: #FF0080;
+    font-weight: 600;
+    margin: 22px;
+}
+
+.menu-items {
+    font-family: Unbounded;
+    font-size: 18px;
+    color: #1E1E1E;
+    font-weight: 300;
+}
+
+.menu-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr max-content;
+
+}
+
+.book-now-button {
+    display: grid;
+    background-color: #FF0080;
+    color: white;
+    font-weight: 400;
+    /* padding: 1.3rem; */
+    width: 9rem;
+    border-radius: 12px;
+    height: 4.18rem;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-wrapper {
+    display: grid;
+    text-align: center;
+
+}
+
+.occasions-wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+
+.search-wrapper {
+    display: grid;
+    border: 1px solid #1e1e1e;
+    border-radius: 12px;
+    /* grid-template-columns: 1fr min-content 1fr min-content 1fr; */
+    grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
+    /* place-items: center; */
+    justify-items: left;
+    padding: 0.8rem;
+}
+
+.search-button {
+    display: grid;
+    background-color: #FF0080;
+    color: white;
+    font-weight: 400;
+    border-radius: 12px;
+    height: 4.18rem;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin: 0px;
+}
+
+hr {
+    opacity: 75%;
+}
+
+.easeload {
+    opacity: 0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+@media (max-width: 768px) {
+    .header {
+
+        grid-template-columns: 0.7fr 0.2fr;
+    }
+
+    .menu-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-items-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .menu-items-container.active {
+        display: block;
+    }
+
+    .menu-items {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu-items:last-child {
+        border-bottom: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #1E1E1E;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .book-now-button {
+        font-size: 14px;
+        width: 7rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-items-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .menu-items-container.active {
+        top: 6.5rem;
+        /* display: block; */
+        /* z-index: -1; */
+        position: absolute;
+    }
+
+    .menu-items {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu-items:last-child {
+        border-bottom: none;
+    }
+}
