@@ -26,5 +26,6 @@ export class ScrollSectionComponent implements AfterViewInit {
     const cardWidth = 320; // 300px card width + 20px margin
     const currentLetterIndex = Math.floor(scrollPosition / cardWidth);
     this.currentLetter = this.alphabet[currentLetterIndex];
+
   }
 }

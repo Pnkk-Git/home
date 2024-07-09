@@ -100,6 +100,22 @@ hr {
     -o-transition: all 2s ease;
 }
 
+.services-wrapper {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.explore-wrapper {
+    display: grid;
+    text-align: center;
+    /* grid-template-columns: 0.8fr; */
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
 @media (max-width: 768px) {
     .header {
 

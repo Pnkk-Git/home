@@ -1,21 +1,20 @@
 :host {
     display: block;
-    height: 100vh;
     overflow: hidden;
 }
 
 #container {
     display: flex;
-    height: 80vh;
+    height: 52vh;
     align-items: center;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
 
 .card {
-    flex: 0 0 300px;
-    height: 200px;
-    margin: 0 10px;
+    flex: 0 0 270px;
+    height: 52vh;
+    margin: 0 2px;
     background-color: #f0f0f0;
     border-radius: 10px;
     display: flex;
@@ -25,27 +24,45 @@
     scroll-snap-align: start;
     transition: transform 0.3s ease;
     cursor: pointer;
+
 }
 
-.card.staggered-top {
+/* .card.staggered-top {
     transform: translateY(-60px);
 }
 
 .card.staggered-bottom {
     transform: translateY(60px);
-}
+} */
 
 #scale {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
     cursor: pointer;
+    background-color: #FF0080;
+    color: white;
+    padding: 1.1rem;
+    overflow: scroll;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 25px;
+    margin-top: 1.5rem;
 }
 
 .letter {
     cursor: pointer;
+    font-size: 22px;
+    display: grid;
+    grid-row-gap: 6px;
+}
+
+.letter:hover {
+    transform: scale(1.4);
+    transition: all 0.1s ease-in;
 }
 
 .letter.active {
-    font-weight: bold;
+    font-weight: bold !important;
+    font-size: 32px;
 }

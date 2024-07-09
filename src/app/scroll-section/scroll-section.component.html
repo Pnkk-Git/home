@@ -5,7 +5,7 @@
     </div>
 </div>
 <div id="scale">
-    <span *ngFor="let letter of alphabet" (click)="scrollToLetter(letter)">
+    <span *ngFor="let letter of alphabet" class="letter" id="letter" (click)="scrollToLetter(letter)">
         {{ letter }}
     </span>
 </div>
