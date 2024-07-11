@@ -6,7 +6,7 @@
 .menu-items-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr max-content 1fr;
-    grid-column-gap: 4rem;
+    grid-column-gap: 2rem;
     align-items: center;
 
 }
@@ -19,7 +19,7 @@
 }
 
 .logo {
-    font-size: 48px;
+    font-size: 38px;
     color: #FF0080;
     font-weight: 600;
     margin: 22px;
@@ -27,7 +27,7 @@
 
 .menu-items {
     font-family: Unbounded;
-    font-size: 18px;
+    font-size: 14px;
     color: #1E1E1E;
     font-weight: 300;
 }
@@ -137,6 +137,7 @@ hr {
         z-index: 1000;
     }
 
+
     .menu-items-container.active {
         display: block;
     }
@@ -196,10 +197,14 @@ hr {
     }
 
     .menu-items-container.active {
-        top: 6.5rem;
+        top: 5.5rem;
         /* display: block; */
         /* z-index: -1; */
         position: absolute;
+    }
+
+    .easeload {
+        height: 55vh !important;
     }
 
     .menu-items {
