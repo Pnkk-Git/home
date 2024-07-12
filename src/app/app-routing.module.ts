@@ -7,12 +7,14 @@ import { ContactComponent } from './contact/contact.component';
 import { ComingComponent } from './coming/coming.component';
 import { AboutComponent } from './about/about.component';
 import { MainComponent } from './main/main.component';
+import { BaseComponent } from './base/base.component';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "contact", component: ContactComponent },
   { path: "coming", component: ComingComponent },
   { path: "about", component: AboutComponent },
+  { path: "base", component: BaseComponent },
   { path: "", component: MainComponent }
 ];
 
