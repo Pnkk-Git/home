@@ -52,6 +52,11 @@
     cursor: pointer;
 }
 
+.book-now-button:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
 .hero-wrapper {
     display: grid;
     text-align: center;
