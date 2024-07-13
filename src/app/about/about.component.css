@@ -65,3 +65,25 @@
     font-size: 24px;
     line-height: 29px;
 }
+
+@media (max-width: 768px){
+    .text-1{
+        font-family: unbounded;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    
+.button {
+    width: 180px;
+    height: 63px;
+    border-radius: 12px;
+    background-color: #FF0080;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer; 
+    transition: opacity 0.3s ease; 
+}
+}

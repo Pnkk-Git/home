@@ -1,9 +1,66 @@
-.logo {
-    font-size: 48px;
-    color: #FF0080;
-    font-weight: 600;
-    margin: 0 auto;
-    display: block;
+.main-1{
     text-align: center;
-    padding-top: 20px;
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    font-family: unbounded;
+    color: #FF0080;
+}
+
+.text-1{
+    font-family: unbounded;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.main-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.logo-1{
+    font-weight: bold;
+    font-family: unbounded;
+    font-size: 24px;
+}
+
+.text-2{
+    font-weight: 200;
+    font-family: unbounded;
+    font-size: 16px;
+    
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .main-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+        cursor: pointer;
+    }
+
+    .text-1{
+        font-family: unbounded;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
