@@ -1,11 +1,19 @@
 <div class="header">
-    <span class="title">PNKK</span>
-    <nav>
-        <ul>
-            <li><a routerLink="">Home</a></li>
-            <li><a routerLink="contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div>
+        <p routerLink="" class="logo">PNKK</p>
+    </div>
+    <div class="menu-wrapper">
+        <div class="hamburger-menu" [class.active]="isMenuActive" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu-items-container" [class.active]="isMenuActive">
+            <p routerLink="" class="menu-items">Home</p>
+            <p routerLink="" class="menu-items">About</p>
+            <p routerLink="" class="menu-items">Services</p>
+            <p routerLink="contact-us" class="menu-items">Contact Us</p>
+            <p routerLink="" class="book-now-button">Book Now</p>
+        </nav>
+    </div>
 </div>
-
-<router-outlet></router-outlet>

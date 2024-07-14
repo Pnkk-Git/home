@@ -27,10 +27,12 @@
 }
 
 .img {
+   
     width: 75%;
     border-radius: 24px 0px 24px 24px;
     border-radius: 24px 0px 24px 24px;
     border: 3px solid #FF0080
+    
 }
 
 @media screen and (max-width: 916px) {

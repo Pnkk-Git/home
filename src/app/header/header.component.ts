@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,15 +9,28 @@ import { Component, OnInit } from '@angular/core';
 
 export class HeaderComponent implements OnInit {
 
-  router:any;
-
-  constructor() { }
+  router: any;
 
   ngOnInit(): void {
   }
 
-  submit(){
-    
+  submit() {
+
+  }
+
+  isMenuActive = false;
+
+  constructor(private elementRef: ElementRef) { }
+
+  toggleMenu() {
+    this.isMenuActive = !this.isMenuActive;
+  }
+
+  @HostListener('document:click', ['$event'])
+  onClickOutside(event: Event) {
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      this.isMenuActive = false;
+    }
   }
 
 }

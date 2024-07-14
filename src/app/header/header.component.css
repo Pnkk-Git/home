@@ -1,52 +1,161 @@
-.header {
-  display: flex;
-  /* Use flexbox for layout */
-  justify-content: space-between;
-  /* Space between items */
+:host {
+  display: grid;
+  font-family: Unbounded;
+}
+
+.menu-items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr max-content 1fr;
+  grid-column-gap: 2rem;
   align-items: center;
-  /* Center items vertically */
+
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 0.4fr 0.55fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.logo {
+  font-size: 38px;
+  color: #FF0080;
+  font-weight: 600;
+  margin: 22px;
+  cursor: pointer;
+}
+
+.menu-items {
+  font-family: Unbounded;
+  font-size: 14px;
+  color: #1E1E1E;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.menu-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr max-content;
+
+}
+
+.book-now-button {
+  display: grid;
   background-color: #FF0080;
-  padding: 0.8rem;
-  padding-left: 2.4rem;
-  padding-right: 2.4rem;
-  /* Padding on top/bottom and sides */
-  /* border-bottom-right-radius: 24px; */
-  /* border-bottom-left-radius: 24px; */
-  font-family: 'Outfit';
-  font-size: 36px;
   color: white;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  box-sizing: border-box;
-
-  /* Ensure padding is included in width */
+  font-weight: 400;
+  /* padding: 1.3rem; */
+  width: 9rem;
+  border-radius: 12px;
+  height: 4.18rem;
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
 }
 
-.header .title {
-  margin: 0;
-  /* Remove default margin */
+.book-now-button:hover {
+  background-color: black;
+  color: whitesmoke;
 }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
+@media (max-width: 768px) {
+  .header {
 
-  margin: 0;
-  padding: 0;
+    grid-template-columns: 0.7fr 0.2fr;
+  }
+
+  .menu-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-items-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+
+  .menu-items-container.active {
+    display: block;
+  }
+
+  .menu-items {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-items:last-child {
+    border-bottom: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #1E1E1E;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .book-now-button {
+    font-size: 14px;
+    width: 7rem;
+    height: 3rem;
+  }
 }
 
-nav ul li {
-  margin-left: 1.5rem;
-}
+@media (max-width: 768px) {
+  .menu-items-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
 
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-}
+  .menu-items-container.active {
+    top: 5.5rem;
+    /* display: block; */
+    /* z-index: -1; */
+    position: absolute;
+  }
 
-nav ul li a:hover {
-  text-decoration: underline;
-  color: black;
+  .easeload {
+    height: 55vh !important;
+  }
+
+  .menu-items {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-items:last-child {
+    border-bottom: none;
+  }
 }

@@ -7,6 +7,31 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  ngOnInit(): void { } isMenuActive = false; constructor(private elementRef: ElementRef) { } toggleMenu() { this.isMenuActive = !this.isMenuActive; } @HostListener('document:click', ['$event']) onClickOutside(event: Event) { if (!this.elementRef.nativeElement.contains(event.target)) { this.isMenuActive = false; } } ngAfterViewInit() { }
+
+
+  ngOnInit(): void {
+  }
+
+
+
+
+  isMenuActive = false;
+
+  constructor(private elementRef: ElementRef) { }
+
+  toggleMenu() {
+    this.isMenuActive = !this.isMenuActive;
+  }
+
+  @HostListener('document:click', ['$event'])
+  onClickOutside(event: Event) {
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      this.isMenuActive = false;
+    }
+  }
+
+  ngAfterViewInit() {
+
+  }
 
 }

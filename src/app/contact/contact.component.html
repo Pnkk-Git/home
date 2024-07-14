@@ -1,24 +1,18 @@
-<!-- <div style="padding: 24px;"> -->
-<div class="header">
-    <div>
-        <p class="logo">PNKK</p>
-    </div>
-    <div class="menu-wrapper">
-        <div class="hamburger-menu" [class.active]="isMenuActive" (click)="toggleMenu()"> <span></span> <span></span>
-            <span></span>
-        </div>
-        <nav class="menu-items-container" [class.active]="isMenuActive">
-            <p class="menu-items">Home</p>
-            <p class="menu-items">About</p>
-            <p class="menu-items">Services</p>
-            <p class="menu-items">Contact Us</p>
-            <p class="book-now-button">Book Now</p>
-        </nav>
-    </div>
+<app-header></app-header>
+
+<div class="image-tray">
+    <div class="tray-item"></div>
+    <div class="tray-item"></div>
+    <div class="tray-item"></div>
+    <div class="tray-item"></div>
+    <div class="tray-item"></div>
+    <div class="tray-item"></div>
 </div>
+
+
 <div class="header-text">
-    <p>celebrate life's <span style="color: #FF0080;">milestones</span> with ease,</p>
-    <p>from birthdays to anniversaries.</p>
+    <p>From intimate gatherings to grand affairs, <span style="color: #FF0080;">PNKK</span> is your one-stop destination
+        for unforgettable experiences.</p>
 </div>
 <div class="main">
     <div class="main-box">
@@ -27,8 +21,15 @@
         <div style="position: relative;"> <input style=" margin-top: 20px;" type="text" required> <label
                 class="box-1">Phone Number</label> </div>
     </div>
-    <div style="position: relative;"> <input style="width: 100%; margin-top: 20px;" type="text" required> <label
-            class="box-1">Location</label> </div>
+    <div style="position: relative;"> <input style="width: 100%; margin-top: 20px;" type="text" required>
+        <label class="box-1">Location</label>
+    </div>
     <div style="position: relative;"> <input style="width: 100%; margin-top: 20px;" type="text" required> <label
             class="box-1">Event type</label> </div>
-</div> <button class="button">Submit</button> <!-- </div> -->
+
+    <div>
+
+        <button class="button">Submit</button>
+    </div>
+</div>
+<app-base></app-base>

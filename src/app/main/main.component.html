@@ -1,22 +1,4 @@
-<div class="header">
-    <div>
-        <p class="logo">PNKK</p>
-    </div>
-    <div class="menu-wrapper">
-        <div class="hamburger-menu" [class.active]="isMenuActive" (click)="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="menu-items-container" [class.active]="isMenuActive">
-            <p class="menu-items">Home</p>
-            <p class="menu-items">About</p>
-            <p class="menu-items">Services</p>
-            <p class="menu-items">Contact Us</p>
-            <p class="book-now-button">Book Now</p>
-        </nav>
-    </div>
-</div>
+<app-header></app-header>
 
 <div>
     <img class="easeload" onload="this.style.opacity=1" style="    display: grid;
@@ -93,3 +75,4 @@
 </div> -->
 
 <img src="../../assets/ep.png" style="display: grid; width:100vw;" />
+<app-base></app-base>

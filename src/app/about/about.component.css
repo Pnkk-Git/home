@@ -1,0 +1,89 @@
+.main{
+    text-align: center;
+}
+
+.text-1{
+    font-family: unbounded;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+.text-2{
+    font-family: unbounded;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29.76px;
+
+}
+
+.button {
+    width: 18vw;
+    height: 63px;
+    border-radius: 12px;
+    background-color: #FF0080;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer; 
+    transition: opacity 0.3s ease; 
+}
+
+.button:hover {
+    background-color: #FF0080;
+    opacity: 0.5; 
+    font-size: 25px;
+}
+
+
+.text-3{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    font-family: unbounded;
+}
+
+.text-4{
+    font-family: unbounded;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.76px;
+}
+
+.text-5{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: unbounded;
+    margin-top: 50px;
+
+}
+
+.text-6{
+    font-family: unbounded;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+@media (max-width: 768px){
+    .text-1{
+        font-family: unbounded;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    
+.button {
+    width: 180px;
+    height: 63px;
+    border-radius: 12px;
+    background-color: #FF0080;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer; 
+    transition: opacity 0.3s ease; 
+}
+}
