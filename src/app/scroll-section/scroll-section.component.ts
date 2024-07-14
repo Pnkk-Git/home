@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { SERVICES } from '../constants';
 
 @Component({
   selector: 'app-scroll-section',
@@ -11,6 +12,11 @@ export class ScrollSectionComponent implements AfterViewInit {
 
   alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   currentLetter = 'A';
+  services: any[] = [];
+
+  constructor() {
+    this.services = SERVICES;
+  }
 
   ngAfterViewInit() {
     this.container.nativeElement.addEventListener('scroll', this.onScroll.bind(this));

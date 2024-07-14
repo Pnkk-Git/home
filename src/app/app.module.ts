@@ -12,6 +12,7 @@ import { ComingComponent } from './coming/coming.component';
 import { AboutComponent } from './about/about.component';
 import { ScrollSectionComponent } from './scroll-section/scroll-section.component';
 import { MainComponent } from './main/main.component';
+import { ServicesComponent } from './services/services.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { MainComponent } from './main/main.component';
     AboutComponent,
     ScrollSectionComponent,
     MainComponent,
+    ServicesComponent,
 
   ],
   imports: [

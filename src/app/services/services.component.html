@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+<div class="image-tray">
+    <img class="tray-item" style="    opacity: 0.3; margin-left: 0px;" src="../../assets/section-1/dj.png" />
+    <img class="tray-item" style="    opacity: 0.6;" src="../../assets/section-1/bump.png" />
+    <img class="tray-item" style="    opacity: 0.8;" src="../../assets/section-1/cc.png" />
+    <img class="tray-item" style="    opacity: 1;" src="../../assets/section-1/baby.png" />
+    <img class="tray-item" style="    opacity: 0.8;" src="../../assets/section-1/wedding.png" />
+    <img class="tray-item" style="    opacity: 0.6;" src="../../assets/section-1/lunch.png" />
+    <img class="tray-item" style="    opacity: 0.3; margin-right: 0px;"
+        src="../../assets/section-1/corporate-events.png" />
+</div>
+
+<div class="services-wrapper">
+    <div *ngFor="let service of services">
+        <div class="services">
+            <img src="../../assets/section-1/{{service.imageUrl}}"
+                style="height: 14rem;width: 60%;object-fit: cover; border-radius: 10px; margin-top: 36px;" />
+            <div class="service-title">{{service.title}}</div>
+        </div>
+    </div>
+</div>

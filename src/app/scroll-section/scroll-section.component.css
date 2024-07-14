@@ -24,16 +24,9 @@
     scroll-snap-align: start;
     transition: transform 0.3s ease;
     cursor: pointer;
-
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 0, 128, 0.35) 100%);
 }
-
-/* .card.staggered-top {
-    transform: translateY(-60px);
-}
-
-.card.staggered-bottom {
-    transform: translateY(60px);
-} */
 
 #scale {
     display: flex;
