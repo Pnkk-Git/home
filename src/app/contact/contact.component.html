@@ -1,34 +1,34 @@
-<div style="height: 140vh; display: grid; align-content: start;">
-    <h1 style="text-align: center; font-family: sans-serif; font-weight: bold; font-size: 60px;">Contact us</h1>
-    <p style="    text-align: center;
-    font-family: sans-serif;
-    width: 500px;
-    display: block;
-    place-self: center">Feel
-        free to contact us with any questions or
-        concerns.
-        You can use the form on our website or email us directly.
-        We appreciate your interest and look forward to hearing from you.</p>
-
-    <div style="width: 500px; display: block; place-self: center; font-family: sans-serif;">
-        Name*
-        <input class="input-1" placeholder="Your name">
-        Last name
-        <input class="input-1" placeholder="Last name">
-        Your email*
-        <input class="input-1" placeholder="Your email address">
-        Message*
-        <input class="input-1" style="height: 50px;" placeholder="Enter your message">
+<!-- <div style="padding: 24px;"> -->
+<div class="header">
+    <div>
+        <p class="logo">PNKK</p>
     </div>
-    <button class="button">Submit</button>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; margin-left: 200px;">
-        <div style="font-family: sans-serif;">
-            <h2>Contacts</h2>
-            <p>office@pnkk.in</p>
+    <div class="menu-wrapper">
+        <div class="hamburger-menu" [class.active]="isMenuActive" (click)="toggleMenu()"> <span></span> <span></span>
+            <span></span>
         </div>
-        <div style="margin-left: 300px; font-family: sans-serif;">
-            <h2>Address</h2>
-            <p>Goa, India</p>
-        </div>
+        <nav class="menu-items-container" [class.active]="isMenuActive">
+            <p class="menu-items">Home</p>
+            <p class="menu-items">About</p>
+            <p class="menu-items">Services</p>
+            <p class="menu-items">Contact Us</p>
+            <p class="book-now-button">Book Now</p>
+        </nav>
     </div>
 </div>
+<div class="header-text">
+    <p>celebrate life's <span style="color: #FF0080;">milestones</span> with ease,</p>
+    <p>from birthdays to anniversaries.</p>
+</div>
+<div class="main">
+    <div class="main-box">
+        <div style="position: relative;"> <input style=" margin-top: 20px;" type="text" required> <label
+                class="box-1">Full Name</label> </div>
+        <div style="position: relative;"> <input style=" margin-top: 20px;" type="text" required> <label
+                class="box-1">Phone Number</label> </div>
+    </div>
+    <div style="position: relative;"> <input style="width: 100%; margin-top: 20px;" type="text" required> <label
+            class="box-1">Location</label> </div>
+    <div style="position: relative;"> <input style="width: 100%; margin-top: 20px;" type="text" required> <label
+            class="box-1">Event type</label> </div>
+</div> <button class="button">Submit</button> <!-- </div> -->
