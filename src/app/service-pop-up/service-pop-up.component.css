@@ -1,0 +1,23 @@
+::ng-deep .mat-dialog-container {
+    background-color: white !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 0, 128, 0.2));
+}
+
+p {
+    color: black;
+
+}
+
+.book-now-button {
+    display: grid;
+    background-color: #FF0080;
+    color: white;
+    font-weight: 400;
+    /* padding: 1.3rem; */
+    width: 9rem;
+    border-radius: 12px;
+    height: 4.18rem;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}

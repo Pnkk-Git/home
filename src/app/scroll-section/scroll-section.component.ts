@@ -1,5 +1,7 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { SERVICES } from '../constants';
+import { MatDialog } from '@angular/material/dialog';
+import { ServicePopUpComponent } from '../service-pop-up/service-pop-up.component';
 
 @Component({
   selector: 'app-scroll-section',
@@ -14,7 +16,7 @@ export class ScrollSectionComponent implements AfterViewInit {
   currentLetter = 'A';
   services: any[] = [];
 
-  constructor() {
+  constructor(private readonly dialog: MatDialog) {
     this.services = SERVICES;
   }
 
@@ -33,5 +35,13 @@ export class ScrollSectionComponent implements AfterViewInit {
     const currentLetterIndex = Math.floor(scrollPosition / cardWidth);
     this.currentLetter = this.alphabet[currentLetterIndex];
 
+  }
+
+  onServiceClick(id: any) {
+    this.dialog.open(ServicePopUpComponent, {
+      data: {
+        id: id
+      }
+    })
   }
 }
