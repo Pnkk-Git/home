@@ -1,5 +1,5 @@
 <div #container id="container">
-    <div *ngFor="let letter of services; let i = index" [id]="'card-' + letter" class="card"
+    <div *ngFor="let letter of services; let i = index" [id]="'card-' + letter.category" class="card"
         [ngClass]="{'staggered-top': i % 2 === 0, 'staggered-bottom': i % 2 !== 0}">
         <img src="../../assets/section-1/{{letter.imageUrl}}"
             style="width: 270px; height: 52vh; object-fit: cover; z-index: -1;" />
