@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 import { Inject } from '@angular/core';
 import { SERVICES } from '../constants';
@@ -20,6 +20,12 @@ export class ServicePopUpComponent implements OnInit {
     this.imageUrl = res[0].imageUrl;
     this.desc = res[0].description;
     this.title = res[0].title
+  }
+
+  @Output() closed = new EventEmitter<void>();
+
+  closePopup() {
+    this.dialog.closeAll();
   }
 
   ngOnInit(): void {

@@ -24,15 +24,30 @@
   font-weight: 600;
   margin: 22px;
   cursor: pointer;
+  text-align: start;
 }
 
 .menu-items {
-  font-family: Unbounded;
+  font-family: unbounded; 
   font-size: 14px;
   color: #1E1E1E;
   font-weight: 300;
   cursor: pointer;
+  text-decoration: none; 
+  transition: all 0.3s ease; 
 }
+
+.menu-items:hover,
+.menu-items.clicked {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #FF0080;
+}
+
+.menu-items.clicked {
+  text-decoration-color: #FF0080;
+}
+
 
 .menu-wrapper {
   display: grid;

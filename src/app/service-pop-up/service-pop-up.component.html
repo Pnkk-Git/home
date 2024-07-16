@@ -1,5 +1,8 @@
-<img src="../../assets/section-1/{{imageUrl}}"
-    style="    width: -webkit-fill-available; height: 54vh; object-fit: cover; border-radius: 10px;" />
+<div style="height: 54vh; position: relative;">
+    <button class="close-button" (click)="closePopup()">X</button>
+    <img src="../../assets/section-1/{{imageUrl}}"
+        style="    width: -webkit-fill-available; height: 100%; object-fit: cover; border-radius: 10px;" />
+</div>
 <div style="display: grid; text-align: center;">
     <p style="font-size: 22px;font-family: Unbounded !important; color:#FF0080">{{title}}</p>
     <p style="font-size: 14px;font-family: Unbounded !important;">{{desc}}</p>

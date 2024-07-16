@@ -25,18 +25,32 @@
 
     <div style="display: grid; grid-template-columns: 0.8fr; justify-content: center;">
         <div class="search-wrapper">
-            <div>
-                <p>Location</p>
-            </div>
+
+
+
+            <!-- Dropdown for Bangalore Regions -->
+            <select style="width: 100%; height: 100%; border: none; font-size: 20px;">
+                <input type="text" placeholder="Location">
+                <option value="bangalore_rural">Your Location</option>
+                <option value="bangalore_rural">Bangalore Rural</option>
+                <option value="bangalore_central">Bangalore Central</option>
+                <option value="bangalore_north">Bangalore North</option>
+                <option value="bangalore_south">Bangalore South</option>
+            </select>
+
             <hr class="solid">
             <div>
-                <p>Event type</p>
+                <select style="width: 100%; height: 100%; border: none; font-size: 20px;"
+                    (change)="onServiceSelect($event)">
+                    <option value="bangalore_rural">Select your Event</option>
+                    <option *ngFor="let title of serviceTitles" [value]="title">{{ title }}</option>
+                </select>
             </div>
             <hr class="solid">
             <div style="display: grid; width: 100%;">
-                <p class="search-button">
+                <button class="search-button" style="border: none; font-size: 20px;">
                     Search
-                </p>
+                </button>
             </div>
         </div>
     </div>

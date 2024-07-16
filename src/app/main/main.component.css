@@ -199,8 +199,8 @@ hr {
 
     .menu-items-container.active {
         top: 5.5rem;
-        /* display: block; */
-        /* z-index: -1; */
+        /* display: block;
+         z-index: -1;  */
         position: absolute;
     }
 

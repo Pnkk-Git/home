@@ -5,7 +5,7 @@
 
 #container {
     display: flex;
-    height: 52vh;
+    height: 65vh;
     align-items: center;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -22,11 +22,18 @@
     align-items: center;
     font-size: 24px;
     scroll-snap-align: start;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease; /* Added width and height transition */
     cursor: pointer;
     position: relative;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 0, 128, 0.35) 100%);
 }
+
+.card:hover {
+    width: 300px; /* Adjust the width as desired */
+    height: 60vh; /* Adjust the height as desired */
+    transform: scale(1.05); /* Optional: Scale the card slightly on hover */
+}
+
 
 #scale {
     display: flex;

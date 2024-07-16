@@ -15,8 +15,9 @@
     <div *ngFor="let service of services">
         <div class="services">
             <img src="../../assets/section-1/{{service.imageUrl}}"
-                style="height: 14rem;width: 60%;object-fit: cover; border-radius: 10px; margin-top: 36px;" />
+                style="height: 14rem;width: 55%;object-fit: cover; border-radius: 10px; margin-top: 36px;" />
             <div class="service-title">{{service.title}}</div>
+            <button (click)="naviGateToContact()" class="book-now-button">Get a quote</button>
         </div>
     </div>
 </div>
