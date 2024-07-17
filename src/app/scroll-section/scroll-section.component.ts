@@ -9,6 +9,7 @@ import { ServicePopUpComponent } from '../service-pop-up/service-pop-up.componen
   styleUrls: ['./scroll-section.component.css']
 })
 export class ScrollSectionComponent implements AfterViewInit {
+  
 
   @ViewChild('container') container!: ElementRef;
 
