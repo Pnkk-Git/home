@@ -30,9 +30,8 @@
 }
 
 .button:hover {
-    background-color: #FF0080;
-    opacity: 0.5; 
-    font-size: 25px;
+    background-color: black;
+    
 }
 
 
