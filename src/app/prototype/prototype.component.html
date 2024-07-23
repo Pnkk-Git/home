@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div #container id="container">
+    <div class="services-wrapper">
+
+        <div *ngFor="let letter of services; let i = index" [id]="'card-' + letter.category" class="card"
+            [ngClass]="{'staggered-top': i % 2 === 0, 'staggered-bottom': i % 2 !== 0}">
+            <div class="services">
+                <img src="../../assets/section-1/{{letter.imageUrl}}"
+                    style="height: 14rem;width: 55%;object-fit: cover; border-radius: 10px; margin-top: 36px;" />
+                <div>
+                    <button class="service-title">
+                        {{letter.title}}
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="scale">
+    <span *ngFor="let letter of alphabet" class="letter" id="letter" (click)="scrollToLetter(letter)">
+        {{ letter }}
+    </span>
+</div>

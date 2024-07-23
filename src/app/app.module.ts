@@ -16,6 +16,16 @@ import { ServicesComponent } from './services/services.component';
 import { ServicePopUpComponent } from './service-pop-up/service-pop-up.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PrototypeComponent } from './prototype/prototype.component';
+import { WeddingComponent } from './wedding/wedding.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatFormFieldModule } from "@angular/material/form-field";
+import {ChangeDetectionStrategy} from '@angular/core';
+import {NativeDateAdapter} from '@angular/material/core';
+
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import { ScrollableScaleComponent } from './scrollable-scale/scrollable-scale.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +42,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MainComponent,
     ServicesComponent,
     ServicePopUpComponent,
+    PrototypeComponent,
+    WeddingComponent,
+    ScrollableScaleComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

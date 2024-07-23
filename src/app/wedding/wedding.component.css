@@ -1,0 +1,62 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Five equal columns */
+    gap: 10px; /* Gap between cards */
+    height: 100vh; /* Full viewport height */
+    align-items: center; /* Center items vertically in the grid */
+    justify-items: center; /* Center items horizontally in the grid */
+    padding: 0 10px; /* Optional: add padding to container */
+    box-sizing: border-box; /* Include padding in the container's width and height */
+}
+
+.card {
+    width: 18vw; /* Fixed width for the cards */
+    height: 52vh; /* Height of the cards */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align text at the bottom */
+    align-items: center;
+    font-size: 24px;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 0, 128, 0.35) 100%);
+}
+
+.card:hover {
+    width: 300px; 
+    height: 60vh; 
+    transform: scale(1.05); 
+}
+
+.card-img {
+    width: 100%;
+    height: 70%; /* Adjust based on image and card height */
+    object-fit: cover; /* Ensure the image covers the card area */
+    border-top-left-radius: 10px; /* Match the card’s border radius */
+    border-top-right-radius: 10px; /* Match the card’s border radius */
+}
+
+.title {
+    font-family: 'Unbounded', sans-serif; /* Ensure the font is correctly applied */
+    display: flex;
+    justify-content: center; /* Center title horizontally */
+    align-items: center; /* Center title vertically */
+    height: 20%; /* Adjust height to fit text and leave space for the image */
+    margin: 0; /* Remove default margins */
+    font-size: 16px;
+    text-align: center; /* Center text horizontally */
+}
+
+.subtitle {
+    font-family: 'Unbounded', sans-serif; /* Ensure the font is correctly applied */
+    display: flex;
+    justify-content: center; /* Center subtitle horizontally */
+    align-items: center; /* Center subtitle vertically */
+    height: 10%; /* Adjust height as needed */
+    margin: 0; /* Remove default margins */
+    font-size: 14px;
+    text-align: center; /* Center text horizontally */
+    color: rgb(236, 28, 236); /* Optional: change text color for contrast */
+}

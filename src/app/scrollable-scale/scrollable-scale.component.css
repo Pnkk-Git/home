@@ -1,0 +1,38 @@
+/* custom-scrollbar.component.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .display-number {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .scrollbar-container {
+    width: 200px;
+    height: 50px; /* Adjust as needed */
+    overflow-x: scroll;
+    position: relative;
+    border: 1px solid pink;
+  }
+  
+  .scroll-content {
+    width: 20000px; /* Ensure a long scrollable content */
+    height: 100%;
+    position: relative;
+  }
+  
+  .dot {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px; /* Adjust to center the dot vertically */
+    left: 0;
+    transform: translateX(-50%);
+  }
+  

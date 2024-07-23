@@ -1,0 +1,9 @@
+<!-- custom-scrollbar.component.html -->
+<div class="container">
+    <div class="display-number">{{ currentNumber }}</div>
+    <div class="scrollbar-container" (scroll)="onScroll($event)">
+        <div class="scroll-content">
+            <div class="dot"></div>
+        </div>
+    </div>
+</div>

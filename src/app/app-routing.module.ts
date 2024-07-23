@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { MainComponent } from './main/main.component';
 import { BaseComponent } from './base/base.component';
 import { ServicesComponent } from './services/services.component';
+import { PrototypeComponent } from './prototype/prototype.component';
+import { WeddingComponent } from './wedding/wedding.component';
 
 const routes: Routes = [
   { path: "contact-us", component: ContactComponent },
@@ -16,7 +18,10 @@ const routes: Routes = [
   { path: "base", component: BaseComponent },
   { path: "", component: MainComponent },
   { path: "services", component: ServicesComponent },
-  { path: 'services/:id', component: ServicesComponent }
+  { path: 'services/:id', component: ServicesComponent },
+  { path: "prototype", component: PrototypeComponent },
+  { path: "wedding", component: WeddingComponent },
+  { path: "coming", component: ComingComponent },
 ];
 
 @NgModule({
