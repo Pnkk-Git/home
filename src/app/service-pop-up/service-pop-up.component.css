@@ -7,7 +7,14 @@
 
 /* popup.component.css */
 
-  
+.main-1{
+    height: 54vh; position: relative;
+}
+
+ .main-2{
+    display: grid;
+    text-align: center;
+ } 
 
   
 
@@ -44,4 +51,23 @@ p {
 
 .book-now-button:hover{
     background-color: black;
+}
+
+@media (max-width: 768px) {
+  
+    .mat-dialog-container {
+        background-color: white !important; 
+        background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 0, 128, 0.2));
+        /* background-color: rgba(255, 255, 255, 0.5);  */
+        /* backdrop-filter: blur(10px); */
+    }
+    .main-1{
+        height: 25vh; position: relative;
+    }
+    
+     .main-2{
+        display: grid;
+        text-align: center;
+     } 
+    
 }
